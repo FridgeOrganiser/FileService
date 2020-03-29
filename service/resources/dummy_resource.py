@@ -1,5 +1,5 @@
 """Module for defining basic resource for testing purposes"""
-from flask import make_response, jsonify
+from flask import jsonify
 from flask_restful import Resource
 from flask_api import status
 from service import api
