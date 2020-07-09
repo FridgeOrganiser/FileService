@@ -6,7 +6,7 @@ from service import api
 
 
 class DummyResource(Resource):
-    """Basic resource for testing if service is up."""
+    """Basic resource for testing if service is up and running."""
     def get(self):
         return jsonify({"Message:": "Hello World"},
                        status.HTTP_200_OK)
