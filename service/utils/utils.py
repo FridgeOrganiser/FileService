@@ -1,4 +1,3 @@
-from PIL import Image, JpegImagePlugin
 from PIL.ImageFile import ImageFile
 import hashlib
 import re
