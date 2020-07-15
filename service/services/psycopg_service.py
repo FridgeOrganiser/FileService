@@ -14,7 +14,7 @@ from constants import (
 def get_service_db_connection_cursor():
     """Function for getting psycopg2.cursor object for db querying."""
     dsn = f"""user={POSTGRESQL_USER} password='{POSTGRESQL_PASSWORD}' host='{POSTGRESQL_HOST}' port='{POSTGRESQL_PORT}'"""
-    connection = connect()
+    connection = connect(dsn)
     connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
     cursor = connection.cursor()
 
