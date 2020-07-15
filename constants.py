@@ -16,5 +16,6 @@ POSTGRESQL_USER = os.getenv("POSTGRESQL_USER")
 POSTGRESQL_PASSWORD = os.getenv("POSTGRESQL_PASSWORD")
 POSTGRESQL_HOST = os.getenv("POSTGRESQL_HOST")
 POSTGRESQL_DB_NAME = os.getenv("POSTGRESQL_DB_NAME")
+POSTGRESQL_PORT = os.getenv("POSTGRESQL_PORT")
 
 # Postgresql credentials ---------------------------------------
