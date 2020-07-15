@@ -5,13 +5,16 @@ from psycopg2 import errors
 from constants import (
     POSTGRESQL_PASSWORD,
     POSTGRESQL_USER,
-    POSTGRESQL_DB_NAME
+    POSTGRESQL_DB_NAME,
+    POSTGRESQL_HOST,
+    POSTGRESQL_PORT
 )
 
 
 def get_service_db_connection_cursor():
     """Function for getting psycopg2.cursor object for db querying."""
-    connection = connect(f"""user={POSTGRESQL_USER} password='{POSTGRESQL_PASSWORD}' """)
+    dsn = f"""user={POSTGRESQL_USER} password='{POSTGRESQL_PASSWORD}' host='{POSTGRESQL_HOST}' port='{POSTGRESQL_PORT}'"""
+    connection = connect()
     connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
     cursor = connection.cursor()
 
