@@ -13,7 +13,7 @@ jws==0.1.3
 mypy_extensions==0.4.3
 numpy==1.19.0
 ordereddict==1.1
-Pillow==7.2.0
+Pillow==8.2.0
 psycopg2==2.8.5
 python-dotenv==0.14.0
 serializer==0.2.1
