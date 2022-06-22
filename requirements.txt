@@ -11,7 +11,7 @@ exc==0.92
 ipaddr==2.2.0
 jws==0.1.3
 mypy_extensions==0.4.3
-numpy==1.19.0
+numpy==1.22.0
 ordereddict==1.1
 Pillow==7.2.0
 psycopg2==2.8.5
