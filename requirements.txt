@@ -2,7 +2,7 @@ Flask_RESTful==0.3.8
 Flask_API==2.0
 keyring==18.0.1
 Click==7.0
-Flask==1.1.1
+Flask==2.3.2
 SQLAlchemy==1.3.18
 psycopg2_binary==2.8.5
 backports.statistics==0.1.0
